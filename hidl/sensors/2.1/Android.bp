@@ -26,6 +26,7 @@ cc_binary {
     vendor: true,
     relative_install_path: "hw",
     srcs: [
+        "AlsCorrection.cpp",
         "service.cpp",
         "HalProxy.cpp",
         "HalProxyCallback.cpp",
@@ -40,12 +41,15 @@ cc_binary {
         "android.hardware.sensors@2.0-ScopedWakelock",
         "android.hardware.sensors@2.1",
         "libbase",
+        "libbinder",
+        "libbinder_ndk",
         "libcutils",
         "libfmq",
         "libhidlbase",
         "liblog",
         "libpower",
         "libutils",
+        "vendor.lineage.xiaomi_als-V1-ndk",
     ],
     static_libs: [
         "android.hardware.sensors@1.0-convert",
